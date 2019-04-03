@@ -1,13 +1,109 @@
-nav, .Content {
+body {
+    background-color: black;
+    color: white;
+}
+
+nav, .Content, .logoImage {
     display: flex;
 }
 
-
 nav {
-    border: solid black 3px;
-    height: 150px;
+    border: solid white 3px;
     font-size: 140%;
     font-weight: 500;
+    align-items: center;
+}
+
+#icon-logo-star {
+    color: orange;
+}
+
+.brand {
+    margin-left: 3%;
+    display: flex;
+    flex-grow: 4;
+}
+.brand-text {
+    margin: 7%
+}
+
+.logoImage > img {
+    margin-left: 7%;
+    width: 75px;
+    height: 75px;
+    flex-direction: row;
+}
+
+.nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-items > li {
+    display: inline-block;
+    padding: 3% 0 3% 0;
+    width: 100px;
+    text-align: center;
+    flex: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+}
+.nav-items > li:hover {
+    background-color: grey;
+}
+
+li > i {
+    padding-bottom: 1%;
+}
+
+.nav-items:hover > li:first-child{
+    color: #FF8901;
+} 
+.nav-items:hover  > li:nth-child(2) {
+    color: rgb(198, 45, 101);
+} 
+.nav-items:hover  > li:nth-child(3) {
+    color: #F44236;
+} 
+.nav-items:hover  > li:nth-child(4) {
+    color: #361D40;
+} 
+.nav-items:hover  > li:nth-child(5) {
+    color: #00A9F4;
+} 
+.nav-items:hover  > li:nth-child(6) {
+    color: #48A14D;
+} 
+.nav-items:hover  > li:nth-child(7) {
+    color: #8BC34A;
+} 
+
+.nav-container {
+    flex-grow: 8;
+}
+.search {
+    flex-grow: 3;
+}
+
+.searchItems {
+    display: inline-flex;
+    position: relative;
+    border: 1px solid #ccc;
+    float: right;
+    margin-right: 10%;
+}
+
+.searchItems > input {
+    width: 40%;
+    flex: 1;
+    border: 0;
+    background-color: black;
+    color: white;
 }
 
 .Content {
@@ -33,4 +129,17 @@ nav {
 .Center {
     border: solid blue 3px;
     flex-grow: 6;
+}
+
+/* @keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+*:focus {
+    outline: none;
 }
