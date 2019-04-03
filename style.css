@@ -1,0 +1,39 @@
+nav, .Content {
+    display: flex;
+}
+
+
+nav {
+    border: solid black 3px;
+    height: 150px;
+    font-size: 140%;
+    font-weight: 500;
+}
+
+.Content {
+    border: solid red 3px;
+    justify-content: space-between;
+}
+
+.Content > div {
+    /* width: 30%; */
+    text-align: center;
+    font-size: 30px;
+    margin: 0 12% 0 12%;
+  }
+
+p {
+    margin: 0;
+  }
+
+.Left > p {
+    border: solid greenyellow 3px;
+}
+
+.Right > p {
+    border: solid yellow 3px;
+}
+
+.Center > p {
+    border: solid blue 3px;
+}
