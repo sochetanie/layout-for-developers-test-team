@@ -12,28 +12,25 @@ nav {
 
 .Content {
     border: solid red 3px;
-    justify-content: space-between;
 }
 
 .Content > div {
-    /* width: 30%; */
-    text-align: center;
     font-size: 30px;
-    margin: 0 12% 0 12%;
+    float: left;
+    height: 600px;
   }
 
-p {
-    margin: 0;
-  }
-
-.Left > p {
+.Left {
     border: solid greenyellow 3px;
+    flex-grow: 1;
 }
 
-.Right > p {
+.Right {
     border: solid yellow 3px;
+    flex-grow: 1;
 }
 
-.Center > p {
+.Center {
     border: solid blue 3px;
+    flex-grow: 6;
 }
